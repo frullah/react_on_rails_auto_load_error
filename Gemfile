@@ -18,3 +18,5 @@ gem "bootsnap", require: false
 gem "sprockets", "= 3.7"
 
 gem "pry", "~> 0.14.1"
+
+gem "shakapacker", "= 6.5.2"
