@@ -17,6 +17,9 @@ default: &default
 
   webpacker_precompile: false
 
+  # RoR file-system based component
+  nested_entries: true
+
 development:
   <<: *default
   # This is false since we're running `bin/webpacker -w` in Procfile.dev-setic

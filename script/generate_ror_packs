@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# This requires the public server bundle file before run
+rake react_on_rails:generate_packs

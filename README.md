@@ -1,24 +1,27 @@
-# README
+# Reproducing react_on_rails packs generation error
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Create a public server bundle first to make react_on_rails packs generation work
 
-Things you may want to cover:
+```bash
+mkdir -p public/packs
+touch public/packs/server-bundle.js
+```
 
-* Ruby version
+or react_on_rails packs generation will crash because it can't find the public server bundle
 
-* System dependencies
+```
+Errno::ENOENT: No such file or directory @ rb_sysopen - .../public/packs/server-bundle.js
+```
 
-* Configuration
+## Generate react_on_rails packs
 
-* Database creation
+```bash
+rake react_on_rails:generate_packs
+```
 
-* Database initialization
+## Compile javascript assets with shakapacker
 
-* How to run the test suite
+```bash
+bin/webpacker
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

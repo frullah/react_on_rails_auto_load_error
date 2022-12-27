@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -rf app/javascript/packs/generated/
+rm -rf app/javascript/packs/server-bundle-generated.js
