@@ -1,27 +1,26 @@
 # Reproducing react_on_rails packs generation error
 
-## Create a public server bundle first to make react_on_rails packs generation work
+react_on_rails packs generation command will crash if the public server bundle is not present
+
+```
+Errno::ENOENT: No such file or directory @ rb_sysopen - .../public/packs/server-bundle.js
+```
+
+so, we should create an empty public server bundle first
 
 ```bash
 mkdir -p public/packs
 touch public/packs/server-bundle.js
 ```
 
-or react_on_rails packs generation will crash because it can't find the public server bundle
-
-```
-Errno::ENOENT: No such file or directory @ rb_sysopen - .../public/packs/server-bundle.js
-```
-
-## Generate react_on_rails packs
+Then, we can generate react_on_rails packs
 
 ```bash
 rake react_on_rails:generate_packs
 ```
 
-## Compile javascript assets with shakapacker
+and compile javascript assets with shakapacker
 
 ```bash
 bin/webpacker
 ```
-
