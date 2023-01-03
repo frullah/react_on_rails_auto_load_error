@@ -17,7 +17,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-on-rails": "13.1.0",
+    "react-on-rails": "https://github.com/frullah/react_on_rails#loading-packs-not-through-application-helpers",
     "shakapacker": "6.5.2",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "5",

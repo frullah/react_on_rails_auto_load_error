@@ -3583,10 +3583,9 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-on-rails@13.1.0:
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-13.1.0.tgz#997dee0d6cd27762f01a5baa58ed51c222a152f0"
-  integrity sha512-OOSzFkQoZc/q8c2E9zc4eOOCUKvmm1KCFE/Le570Sxwov3lnUVrpCjPbk+LblYvZLmKTjXMY8p4ocx7mYn7E7Q==
+"react-on-rails@https://github.com/frullah/react_on_rails#loading-packs-not-through-application-helpers":
+  version "13.3.2"
+  resolved "https://github.com/frullah/react_on_rails#fb15b820bf829dd355d8a3a719dd4bc0616607ca"
   dependencies:
     "@babel/runtime-corejs3" "^7.12.5"
     concurrently "^5.1.0"
