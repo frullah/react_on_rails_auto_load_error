@@ -21,4 +21,4 @@ gem "pry", "~> 0.14.1"
 
 gem "shakapacker", "= 6.5.2"
 
-gem "react_on_rails", git: "https://github.com/frullah/react_on_rails", branch: "loading-packs-not-through-application-helpers"
+gem "react_on_rails", "13.3.2"
